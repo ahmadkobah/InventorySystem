@@ -64,7 +64,6 @@ It is not under active development.
 
 - All four simulations are implemented and reachable from the main menu.
 - There are no automated tests.
-- Compiled `.class` files under `build/` are committed to the repository.
 - Some calculation and input-handling details are simplified; see
   [Known Issues](#known-issues).
 
@@ -205,14 +204,11 @@ A single server queue shown as an event list (arrivals and departures).
 InventorySystem/
 |-- build.xml                      Ant build file (NetBeans default)
 |-- manifest.mf                    JAR manifest template
-|-- build/
-|   `-- classes/pkgfinal/modeling/ Compiled .class files (committed)
 |-- nbproject/
 |   |-- build-impl.xml             Generated NetBeans build script
 |   |-- genfiles.properties
 |   |-- project.properties         Main class, Java level, output paths
-|   |-- project.xml                Project name "final modeling"
-|   `-- private/                   Local IDE settings (committed)
+|   `-- project.xml                Project name "final modeling"
 `-- src/
     `-- pkgfinal/modeling/
         |-- FinalModeling.java               Entry point (main class)
@@ -345,8 +341,6 @@ These points were found while reading the source code:
   Pressing Cancel or typing text causes an unhandled exception instead of an error message.
 - **Event Simulation - window.** Closing the results window ends the whole program, not
   only that window.
-- **Repository content.** Compiled classes in `build/` and the IDE folder
-  `nbproject/private/` are committed and are normally excluded with a `.gitignore`.
 
 ---
 
