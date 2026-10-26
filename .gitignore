@@ -1,0 +1,4 @@
+# Secrets, dependencies and generated files
+build/
+dist/
+nbproject/private/
